@@ -119,7 +119,6 @@ public class BookAuthorClientService {
         responseObserver.onCompleted();
         boolean await  = countDownLatch.await(1,TimeUnit.MINUTES);
         return await ? response : Collections.emptyList();
-
     }
 
 }
